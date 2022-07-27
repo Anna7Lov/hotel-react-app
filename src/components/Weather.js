@@ -26,7 +26,7 @@ export default function Weather({ city }) {
             color='#1B75BB'
           />}
         <div>
-          <h3 className="Weather__title">{city}</h3>
+          <h4 className="Weather__title">{city}</h4>
           <p className="Weather__temperature">
             {Math.round(temperature)}°C
           </p>
