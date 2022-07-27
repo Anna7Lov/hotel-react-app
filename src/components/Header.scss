@@ -1,0 +1,21 @@
+.Header {
+    background: url(../../public/images/header_background.png) no-repeat center;
+    background-size: cover;    
+    padding-bottom: 20px;    
+
+    &__inner {
+        max-width: 1250px;        
+        margin: 0 auto;
+    }
+
+    &__top {        
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }  
+
+    &__text {
+        max-width: 320px;
+    }
+}
+

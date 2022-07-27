@@ -1,0 +1,20 @@
+.HorizontalMenu {    
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: #081F32;    
+    display: flex;  
+    margin-right: 50px;    
+    
+    &__item {
+        margin-right: 40px;    
+    }
+
+    &__link {
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
