@@ -1,9 +1,9 @@
 import './App.scss';
-import Header from './components/Header'
-import Video from './components/Video'
-import Subtitle from './components/Subtitle'
-import Title from './components/Title'
-import Button from './components/Button'
+import Header from './components/main/Header'
+import Video from './components/main/Video'
+import Subtitle from './components/shared/Subtitle'
+import Title from './components/shared/Title'
+import Button from './components/shared/Button'
 
 function App() {
   return (
