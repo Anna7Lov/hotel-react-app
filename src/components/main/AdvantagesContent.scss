@@ -1,0 +1,18 @@
+@import '../../index.scss';
+
+.advantages-content {
+    @include main-align();
+    margin-bottom: 140px;
+
+    &__topic {
+        margin-bottom: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    &__text {
+        max-width: 800px;
+    }
+}

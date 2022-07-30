@@ -1,8 +1,10 @@
+@import '../../index.scss';
+
 .horizontal-menu {    
     font-weight: 500;
     font-size: 20px;
     line-height: 150%;
-    color: #081F32;    
+    color: $dark-color;    
     display: flex;  
     margin-right: 50px;    
     

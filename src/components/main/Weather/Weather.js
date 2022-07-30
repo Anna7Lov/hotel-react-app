@@ -1,4 +1,4 @@
-import React, { useEffect, useState, CSSProperties } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 import ReactAnimatedWeather from 'react-animated-weather';
 import { API_URL } from './utils'

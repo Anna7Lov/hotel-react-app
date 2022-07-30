@@ -1,12 +1,14 @@
+@import '../../index.scss';
+
 .main-title{
     font-weight: 600;
     font-size: 57px;
     line-height: 120%;
-    color: #081F32;
+    color: $dark-color;
     max-width: 450px;
     margin-bottom: 10px;
 
     &__word {
-        color: #1B75BB;
+        color: $blue-color;
     }
 }

@@ -1,8 +1,10 @@
+@import '../../index.scss';
+
 .text {
     font-weight: 400;
     font-size: 18px;
     line-height: 160%;
-    color: #081F32;
+    color: $dark-color;
     margin-bottom: 20px;
 }
 

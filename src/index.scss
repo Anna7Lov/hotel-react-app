@@ -1,3 +1,12 @@
+@mixin main-align() {
+    max-width: 1250px;    
+    margin: 0 auto;  
+}
+
+$blue-color: #1B75BB;
+$dark-color: #081F32;
+$white-color: #FFFFFF;
+
 * {
     box-sizing: border-box;
 }
