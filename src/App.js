@@ -21,7 +21,10 @@ function App() {
         </div>
       </div>
       <AdvantagesContent />
-      <Reviews />
+      <div className="reviews-content">
+        <Title title='What our clients say' />
+        <Reviews />
+      </div>
     </div>
   );
 }
