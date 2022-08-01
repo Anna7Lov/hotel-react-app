@@ -4,6 +4,7 @@ import Subtitle from './components/shared/Subtitle';
 import Title from './components/shared/Title';
 import Button from './components/shared/Button';
 import AdvantagesContent from './components/main/AdvantagesContent';
+import Reviews from './components/main/Reviews';
 
 import './App.scss';
 
@@ -20,6 +21,7 @@ function App() {
         </div>
       </div>
       <AdvantagesContent />
+      <Reviews />
     </div>
   );
 }

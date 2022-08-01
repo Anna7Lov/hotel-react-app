@@ -1,0 +1,100 @@
+@import '../../index.scss';
+
+.reviews {    
+    max-width: 1200px;
+    margin: 0 auto 140px;
+    padding: 20px 0 20px 30px;    
+
+    &__content {
+        max-width: 360px;
+        border: 1px solid #ebebeb;
+        border-radius: 5px;
+        margin-right: 30px;
+        padding: 20px;
+        box-shadow: inset 0px 3px 10px rgba(199, 199, 199, 0.25);
+
+        &:hover {
+            border: 1px solid $blue-color;
+        }
+    }
+
+    &__text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 160%;
+        text-align: center;
+        color: $dark-color;
+        margin-bottom: 20px;
+        padding-top: 30px;
+        position: relative;
+        min-height: 88px;
+
+        &::before {
+            content: "";
+            width: 24px;    
+            height: 21px;        
+            position: absolute;
+            top: 0;
+            background: url(../../../public/images/icon_review.png) no-repeat;            
+        }
+    }
+
+    &__author {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 150%;
+        text-align: center;
+        color: $dark-color;
+        opacity: 0.9;
+        margin-bottom: 5px;
+        padding-top: 115px;
+        position: relative;
+
+        &::before {
+            content: "";
+            width: 100px;    
+            height: 100px;        
+            position: absolute;
+            top: 0;      
+            border-radius: 50%;
+            overflow: hidden;
+            border: 2px solid $blue-color;                 
+        }
+    }
+
+    &__nickname {
+        display: block;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 160%;
+        text-align: center;
+        color: $dark-color;
+        opacity: 0.7;
+    }
+}
+
+.david::before {
+    background: url(../../../public/images/reviews_david.jpg) no-repeat; 
+}
+
+.ravi::before {
+    background: url(../../../public/images/reviews_ravi.jpg) no-repeat; 
+}
+
+.thomas::before {
+    background: url(../../../public/images/reviews_thomas.jpg) no-repeat; 
+}
+
+.frank::before {
+    background: url(../../../public/images/reviews_frank.jpg) no-repeat;     
+}
+
+.tobias::before {
+    background: url(../../../public/images/reviews_tobias.jpg) no-repeat; 
+}
+
+.reviews .slick-prev:before,
+.reviews .slick-next:before {
+    color: $dark-color;
+}

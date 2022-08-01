@@ -6,7 +6,7 @@ import './AdvantagesContent.scss';
 
 export default function AdvantagesContent() {
 
-    let advantages = [
+    const advantages = [
         { id: 10, title: 'Easy booking', text: 'The booking process should include minimal steps.', additionalClass: 'booking' },
         { id: 11, title: 'Friendly interface', text: 'A hotel booking engine with a good user-friendly.', additionalClass: 'interface' },
         { id: 12, title: 'Responsibility', text: 'You should be able to add rooms to your system.', additionalClass: 'responsibility' },
