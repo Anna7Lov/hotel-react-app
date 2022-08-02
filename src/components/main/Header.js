@@ -10,7 +10,7 @@ import './Header.scss';
 
 export default function Header() {
 
-    let horizontalLinks = [
+    const horizontalLinks = [
         { id: 1, name: 'Home', address: '/' },
         { id: 2, name: 'Features', address: 'https://eva.ua/' },
         { id: 3, name: 'Gallery', address: 'https://evasss.ua/' },

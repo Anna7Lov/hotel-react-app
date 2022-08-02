@@ -5,6 +5,7 @@ import Title from './components/shared/Title';
 import Button from './components/shared/Button';
 import AdvantagesContent from './components/main/AdvantagesContent';
 import Reviews from './components/main/Reviews';
+import Footer from './components/main/Footer';
 
 import './App.scss';
 
@@ -25,6 +26,7 @@ function App() {
         <Title title='What our clients say' />
         <Reviews />
       </div>
+      <Footer />
     </div>
   );
 }

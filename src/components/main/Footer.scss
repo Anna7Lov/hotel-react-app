@@ -1,0 +1,17 @@
+@import '../../index.scss';
+
+.footer {
+    background: #fbfaf9;
+    padding-top: 50px;
+    padding-bottom: 80px;
+
+    &__inner {
+        @include main-align();
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__text {
+        max-width: 250px;
+    }    
+}
