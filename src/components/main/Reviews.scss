@@ -1,9 +1,9 @@
 @import '../../index.scss';
 
-.reviews {    
+.reviews {
     max-width: 1200px;
     margin: 0 auto 140px;
-    padding: 20px 0 20px 30px;    
+    padding: 20px 0 20px 30px;
 
     &__content {
         max-width: 360px;
@@ -32,11 +32,11 @@
 
         &::before {
             content: "";
-            width: 24px;    
-            height: 21px;        
+            width: 24px;
+            height: 21px;
             position: absolute;
             top: 0;
-            background: url(../../../public/images/icon_review.png) no-repeat;            
+            background: url(../../../public/images/icon_review.png) no-repeat;
         }
     }
 
@@ -53,13 +53,13 @@
 
         &::before {
             content: "";
-            width: 100px;    
-            height: 100px;        
+            width: 100px;
+            height: 100px;
             position: absolute;
-            top: 0;      
+            top: 0;
             border-radius: 50%;
             overflow: hidden;
-            border: 2px solid $blue-color;                 
+            border: 2px solid $blue-color;
         }
     }
 
@@ -75,26 +75,32 @@
 }
 
 .david::before {
-    background: url(../../../public/images/reviews_david.jpg) no-repeat; 
+    background: url(../../../public/images/reviews_david.jpg) no-repeat;
 }
 
 .ravi::before {
-    background: url(../../../public/images/reviews_ravi.jpg) no-repeat; 
+    background: url(../../../public/images/reviews_ravi.jpg) no-repeat;
 }
 
 .thomas::before {
-    background: url(../../../public/images/reviews_thomas.jpg) no-repeat; 
+    background: url(../../../public/images/reviews_thomas.jpg) no-repeat;
 }
 
 .frank::before {
-    background: url(../../../public/images/reviews_frank.jpg) no-repeat;     
+    background: url(../../../public/images/reviews_frank.jpg) no-repeat;
 }
 
 .tobias::before {
-    background: url(../../../public/images/reviews_tobias.jpg) no-repeat; 
+    background: url(../../../public/images/reviews_tobias.jpg) no-repeat;
 }
 
 .reviews .slick-prev:before,
 .reviews .slick-next:before {
-    color: $dark-color;
+    color: $blue-color;
+    opacity: 1;
+}
+
+.reviews .slick-prev:hover:before,
+.reviews .slick-next:hover:before {
+    color: #a6a6a6;
 }
