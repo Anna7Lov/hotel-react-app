@@ -1,4 +1,5 @@
 import Header from './components/main/Header';
+import BookingForm from './components/main/BookingForm';
 import Video from './components/main/Video';
 import Subtitle from './components/shared/Subtitle';
 import Title from './components/shared/Title';
@@ -13,6 +14,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <BookingForm />
       <div className='video-content'>
         <Video />
         <div className='video-content__text'>
