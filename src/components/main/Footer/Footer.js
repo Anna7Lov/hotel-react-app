@@ -1,11 +1,11 @@
-import Logo from './Logo';
-import Text from '../shared/Text';
-import SocialNetworks from './SocialNetworks';
-import VerticalMenu from './VerticalMenu';
+import Logo from '../Logo/Logo';
+import Text from '../../shared/Text/Text';
+import SocialNetworks from '../SocialNetworks/SocialNetworks';
+import VerticalMenu from '../VerticalMenu/VerticalMenu';
 
 import './Footer.scss';
 
-export default function Footer() {
+export default function Footer() {    
 
     const verticalLinks = [
 

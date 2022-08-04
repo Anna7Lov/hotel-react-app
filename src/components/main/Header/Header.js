@@ -1,10 +1,10 @@
-import Logo from './Logo'
-import HorizontalMenu from './HorizontalMenu'
-import Button from '../shared/Button'
-import Subtitle from '../shared/Subtitle'
-import MainTitle from '../shared/MainTitle'
-import Text from '../shared/Text'
-import Weather from './Weather/Weather'
+import Logo from '../Logo/Logo';
+import HorizontalMenu from '../HorizontalMenu/HorizontalMenu';
+import Button from '../../shared/Button/Button';
+import Subtitle from '../../shared/Subtitle/Subtitle';
+import MainTitle from '../../shared/MainTitle/MainTitle';
+import Text from '../../shared/Text/Text';
+import Weather from '../Weather/Weather';
 
 import './Header.scss';
 

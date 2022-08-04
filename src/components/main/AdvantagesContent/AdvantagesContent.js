@@ -1,6 +1,6 @@
-import Title from '../shared/Title';
-import Text from '../shared/Text';
-import Advantages from './Advantages';
+import Title from '../../shared/Title/Title';
+import Text from '../../shared/Text/Text';
+import Advantages from '../Advantages/Advantages';
 
 import './AdvantagesContent.scss';
 

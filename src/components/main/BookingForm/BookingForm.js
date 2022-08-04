@@ -1,7 +1,7 @@
 import React from "react";
 
-import Button from '../shared/Button';
-import Date from '../main/Date';
+import Button from '../../shared/Button/Button';
+import Date from '../Date/Date';
 
 import './BookingForm.scss';
 

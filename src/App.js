@@ -1,12 +1,12 @@
-import Header from './components/main/Header';
-import BookingForm from './components/main/BookingForm';
-import Video from './components/main/Video';
-import Subtitle from './components/shared/Subtitle';
-import Title from './components/shared/Title';
-import Button from './components/shared/Button';
-import AdvantagesContent from './components/main/AdvantagesContent';
-import Reviews from './components/main/Reviews';
-import Footer from './components/main/Footer';
+import Header from './components/main/Header/Header';
+import BookingForm from './components/main/BookingForm/BookingForm';
+import Video from './components/main/Video/Video';
+import Subtitle from './components/shared/Subtitle/Subtitle';
+import Title from './components/shared/Title/Title';
+import Button from './components/shared/Button/Button';
+import AdvantagesContent from './components/main/AdvantagesContent/AdvantagesContent';
+import Reviews from './components/main/Reviews/Reviews';
+import Footer from './components/main/Footer/Footer';
 
 import './App.scss';
 

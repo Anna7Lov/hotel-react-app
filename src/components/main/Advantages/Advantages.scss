@@ -1,4 +1,4 @@
-@import '../../index.scss';
+@import '../../../index.scss';
 
 .advantages {
     display: flex;
@@ -49,20 +49,20 @@
 
 .booking::before {
     height: 70px;
-    background: url(../../../public/images/icon_booking.png) no-repeat;
+    background: url(../../../../public/images/icon_booking.png) no-repeat;
 }
 
 .interface::before {
     height: 70px;
-    background: url(../../../public/images/icon_interface.png) no-repeat;
+    background: url(../../../../public/images/icon_interface.png) no-repeat;
 }
 
 .responsibility::before {
     height: 75px;
-    background: url(../../../public/images/icon_responsibility.png) no-repeat;
+    background: url(../../../../public/images/icon_responsibility.png) no-repeat;
 }
 
 .quick-order::before {
     height: 73px;
-    background: url(../../../public/images/icon_quick_order.png) no-repeat;
+    background: url(../../../../public/images/icon_quick_order.png) no-repeat;
 }

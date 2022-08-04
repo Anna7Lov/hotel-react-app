@@ -1,4 +1,4 @@
-@import '../../index.scss';
+@import '../../../index.scss';
 
 .reviews {
     max-width: 1200px;
@@ -36,7 +36,7 @@
             height: 21px;
             position: absolute;
             top: 0;
-            background: url(../../../public/images/icon_review.png) no-repeat;
+            background: url(../../../../public/images/icon_review.png) no-repeat;
         }
     }
 
@@ -75,23 +75,23 @@
 }
 
 .david::before {
-    background: url(../../../public/images/reviews_david.jpg) no-repeat;
+    background: url(../../../../public/images/reviews_david.jpg) no-repeat;
 }
 
 .ravi::before {
-    background: url(../../../public/images/reviews_ravi.jpg) no-repeat;
+    background: url(../../../../public/images/reviews_ravi.jpg) no-repeat;
 }
 
 .thomas::before {
-    background: url(../../../public/images/reviews_thomas.jpg) no-repeat;
+    background: url(../../../../public/images/reviews_thomas.jpg) no-repeat;
 }
 
 .frank::before {
-    background: url(../../../public/images/reviews_frank.jpg) no-repeat;
+    background: url(../../../../public/images/reviews_frank.jpg) no-repeat;
 }
 
 .tobias::before {
-    background: url(../../../public/images/reviews_tobias.jpg) no-repeat;
+    background: url(../../../../public/images/reviews_tobias.jpg) no-repeat;
 }
 
 .reviews .slick-prev:before,
