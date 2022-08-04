@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import './HorizontalMenu.scss';
 
 export default function HorizontalMenu({ links }) {
@@ -6,7 +8,7 @@ export default function HorizontalMenu({ links }) {
     <ul className='horizontal-menu__links'>
       {links.map((link) => (
         <li key={link.id} className='horizontal-menu__item'>
-          <a href={link.address} className='horizontal-menu__link'> {link.name} </a>
+          <Link to={link.address} className='horizontal-menu__link'> {link.name} </Link>
         </li>
       ))}
     </ul>

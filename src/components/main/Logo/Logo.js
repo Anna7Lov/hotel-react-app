@@ -1,5 +1,7 @@
+import { Link } from 'react-router-dom';
+
 import './Logo.scss';
 
 export default function Logo() {
-    return <a href="/" className="logo"> </a>
+    return <Link to="/" className="logo"> </Link>
 }

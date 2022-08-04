@@ -1,35 +1,20 @@
-import Header from './components/main/Header/Header';
-import BookingForm from './components/main/BookingForm/BookingForm';
-import Video from './components/main/Video/Video';
-import Subtitle from './components/shared/Subtitle/Subtitle';
-import Title from './components/shared/Title/Title';
-import Button from './components/shared/Button/Button';
-import AdvantagesContent from './components/main/AdvantagesContent/AdvantagesContent';
-import Reviews from './components/main/Reviews/Reviews';
-import Footer from './components/main/Footer/Footer';
+import { Routes, Route } from 'react-router-dom';
 
-import './App.scss';
+import HomePage from './pages/HomePage/HomePage';
+import FeaturesPage from './pages/FeaturesPage/FeaturesPage';
+import GalleryPage from './pages/GalleryPage/GalleryPage';
+import ReviewsPage from './pages/ReviewsPage/ReviewsPage';
+import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
 
 function App() {
-  return (
-    <div className="App">
-      <Header />
-      <BookingForm />
-      <div className='video-content'>
-        <Video />
-        <div className='video-content__text'>
-          <Subtitle title='Dream holidays' />
-          <Title title='Enjoy unforgettable experiences in dream hotel' />
-          <Button title='View more' />
-        </div>
-      </div>
-      <AdvantagesContent />
-      <div className="reviews-content">
-        <Title title='What our clients say' />
-        <Reviews />
-      </div>
-      <Footer />
-    </div>
+  return (   
+      <Routes>
+        <Route path='/' element={<HomePage />} />
+        <Route path='/features' element={<FeaturesPage />} />
+        <Route path='/gallery' element={<GalleryPage />} />
+        <Route path='/reviews' element={<ReviewsPage />} />
+        <Route path='*' element={<NotFoundPage />} />          
+      </Routes>    
   );
 }
 

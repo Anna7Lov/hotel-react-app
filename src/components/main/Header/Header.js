@@ -12,9 +12,9 @@ export default function Header() {
 
     const horizontalLinks = [
         { id: 1, name: 'Home', address: '/' },
-        { id: 2, name: 'Features', address: 'https://eva.ua/' },
-        { id: 3, name: 'Gallery', address: 'https://evasss.ua/' },
-        { id: 4, name: 'Reviews', address: 'https://eva.ua/' }
+        { id: 2, name: 'Features', address: '/features' },
+        { id: 3, name: 'Gallery', address: '/gallery' },
+        { id: 4, name: 'Reviews', address: '/reviews' }
     ];
 
     return (
