@@ -1,5 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
+import { SETTINGS } from '../../../constants/reviews';
 
 import './Reviews.scss';
 import "slick-carousel/slick/slick.css";
@@ -14,18 +15,9 @@ export default function Reviews() {
     { id: 23, text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit Ultrices.', title: 'Frank Goslar', nickname: 'frank98@', additionalClass: 'frank' },
     { id: 24, text: 'Lorem ipsum dolor sit amet, consectetur adipiscing.', title: 'Tobias Black', nickname: 'tob5@', additionalClass: 'tobias' },
   ];
-
-  const settings = {
-    dots: true,
-    autoplay: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1
-  };
-
+  
   return (
-    <Slider className="reviews" {...settings}>
+    <Slider className="reviews" {...SETTINGS}>
       {reviews.map((review) => (
         <div key={review.id} className='reviews__content'>
           <p className='reviews__text'>{review.text}</p>

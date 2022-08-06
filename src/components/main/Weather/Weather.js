@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import ReactAnimatedWeather from 'react-animated-weather';
-import { API_URL } from '../../../constants/weather'
-import { ThreeDots } from 'react-loader-spinner'
+import { API_URL } from '../../../constants/weather';
+import { ThreeDots } from 'react-loader-spinner';
 
 import './Weather.scss';
 

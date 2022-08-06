@@ -1,20 +1,9 @@
 @import '../../../index.scss';
 
-.booking-form {
-    display: flex;
-    align-items: center;
-    background: #fbfaf9;
-    border-radius: 5px;
-    max-width: 630px;
-    margin-left: 100px;
-    margin-top: -48px;
-    margin-bottom: 140px;
-    padding: 18px 50px 18px 18px;
-
-    &__content {
+.drop-down-list {   
         border-right: 1px solid #9DACB8;
-        padding: 0 30px;
-    }
+        padding: 0 30px;   
+        border-right: none;
 
     &__label {
         display: block;
@@ -22,9 +11,9 @@
         font-size: 18px;
         color: $dark-color;
         line-height: 160%;
-    }
+    }    
 
-    &__input {
+    &__select {
         display: block;
         width: 82px;
         height: 30px;
@@ -32,5 +21,5 @@
         outline: none;
         background: transparent;
         cursor: pointer;
-    }    
+    }
 }
