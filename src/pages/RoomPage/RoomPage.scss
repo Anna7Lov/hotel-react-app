@@ -1,7 +1,10 @@
 @import '../../index.scss';
 
 .room-page {
-    @include main-align();
+
+    &__main-content {
+        @include main-align();
+    }    
 
     &__top {
         display: flex;
