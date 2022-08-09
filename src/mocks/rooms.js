@@ -1,0 +1,8 @@
+const rooms = [
+    { 'id': 200, 'name': 'Single Deluxe', 'price': 150, 'capacity': 1, 'roomImage': 'https://www.hotelstheone.com/ImagenesHabitacion/Habitacion-Cosy-515.jpg', 'bathroomImage': 'https://cmspro.h10hotels.com/ImagenesHotel/Ba%C3%B1o-habitacion-410hto.jpg', 'additionalClass': 'single', 'description': 'Welcoming 26m² rooms with street views.' },
+    { 'id': 201, 'name': 'Double Deluxe', 'price': 250, 'capacity': 2, 'roomImage': 'https://cmspro.h10hotels.com/ImagenesHotel/the%20one%20the%20one%20(4).jpg', 'bathroomImage': 'https://cmspro.h10hotels.com/ImagenesHotel/the%20one%20the%20one%20(1).jpg','additionalClass': 'double', 'description': 'Spacious 29 m² rooms with street views.' },
+    { 'id': 202, 'name': 'Family Suit', 'price': 400, 'capacity': 4, 'roomImage': 'https://cmspro.h10hotels.com/ImagenesHotel/the%20one%20the%20one%20(3).jpg', 'bathroomImage': 'https://cmspro.h10hotels.com/ImagenesHotel/the%20one%20the%20one%20(1).jpg','additionalClass': 'family', 'description': '40 m² suites located on the corner of the building, with street views.' },
+    { 'id': 203, 'name': 'Family Suit Deluxe', price: 500, 'capacity': 5, 'roomImage': 'https://cmspro.h10hotels.com/ImagenesHotel/Vista%20salon%20Suite%20605.jpg', 'bathroomImage': 'https://cmspro.h10hotels.com/ImagenesHotel/Ba%C3%B1o-405hto.jpg','additionalClass': 'family-deluxe', 'description': 'Spacious rooms of 55 m² divided into two spaces: complete living room that gives way to an elegant and cozy bedroom.' }
+];
+
+export default rooms;

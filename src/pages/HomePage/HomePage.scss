@@ -7,9 +7,27 @@
     margin-bottom: 140px;
 }
 
+.rooms-content {
+    @include main-align();
+    margin-bottom: 140px;    
+}
+
+.rooms-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    &__title {
+        margin-bottom: 0;
+    }
+}
+
 .reviews-content {
     @include main-align();
-    display: flex;
-    flex-direction: column;
-    align-items: center;    
+
+    &__title {
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+    }   
 }

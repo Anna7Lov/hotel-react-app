@@ -1,7 +1,7 @@
 import './Title.scss';
 
-export default function Title({ title }) {
+export default function Title({ additionalClass, title }) {
     return (
-        <h2 className='title'>{title}</h2>        
+        <h2 className={`title ${additionalClass}`}>{title}</h2>        
     )
 }

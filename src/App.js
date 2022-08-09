@@ -4,6 +4,7 @@ import HomePage from './pages/HomePage/HomePage';
 import FeaturesPage from './pages/FeaturesPage/FeaturesPage';
 import GalleryPage from './pages/GalleryPage/GalleryPage';
 import ReviewsPage from './pages/ReviewsPage/ReviewsPage';
+import RoomPage from './pages/RoomPage/RoomPage';
 import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Route path='/features' element={<FeaturesPage />} />
         <Route path='/gallery' element={<GalleryPage />} />
         <Route path='/reviews' element={<ReviewsPage />} />
+        <Route path='/rooms/:id' element={<RoomPage />} />
         <Route path='*' element={<NotFoundPage />} />          
       </Routes>    
   );

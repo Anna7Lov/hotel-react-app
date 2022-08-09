@@ -6,10 +6,10 @@ import DropDownList from '../DropDownList/DropDownList';
 
 import './BookingForm.scss';
 
-export default function BookingForm() {  
+export default function BookingForm({additionalClass}) {  
 
     return (
-        <form className='booking-form'>
+        <form className={`booking-form ${additionalClass}`}>
             <div className='booking-form__content'>
                 <label className='booking-form__label'>Check in
                     <Date />

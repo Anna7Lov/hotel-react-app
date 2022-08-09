@@ -6,7 +6,9 @@ import Title from '../../components/shared/Title/Title';
 import Button from '../..//components/shared/Button/Button';
 import AdvantagesContent from '../../components/main/AdvantagesContent/AdvantagesContent';
 import Reviews from '../../components/main/Reviews/Reviews';
-import Footer from '../../components/main/Footer/Footer';
+import Footer from '../../components/shared/Footer/Footer';
+import ModalWindow from '../../components/main/ModalWindow/ModalWindow';
+import Rooms from '../../components/main/Rooms/Rooms';
 
 import './HomePage.scss';
 
@@ -14,7 +16,7 @@ export default function HomePage() {
     return (
         <div>
             <Header />
-            <BookingForm />
+            <BookingForm additionalClass='main-form'/>
             <div className='video-content'>
                 <Video />
                 <div className='video-content__text'>
@@ -24,8 +26,15 @@ export default function HomePage() {
                 </div>
             </div>
             <AdvantagesContent />
+            <div className="rooms-content">
+                <div className='rooms-info'>
+                <Title additionalClass='rooms-info__title' title='Choose your perfect room!' />
+                <ModalWindow />
+                </div>
+                <Rooms />                
+            </div>
             <div className="reviews-content">
-                <Title title='What our clients say' />
+                <Title additionalClass='reviews-content__title' title='What our clients say' />
                 <Reviews />
             </div>
             <Footer />

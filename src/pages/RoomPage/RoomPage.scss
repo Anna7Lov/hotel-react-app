@@ -1,0 +1,42 @@
+@import '../../index.scss';
+
+.room-page {
+    @include main-align();
+
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;        
+    }
+
+    &__images {
+        padding: 20px 0;
+        margin-bottom: 10px;        
+    }
+
+    &__image {        
+        width: 610px;
+        height: 440px;
+        border-radius: 5px;
+
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+
+    &__info {
+        display: block;
+        margin-bottom: 20px;
+        font-weight: 400;
+        font-size: 18px;
+        color: $dark-color;
+    }
+}

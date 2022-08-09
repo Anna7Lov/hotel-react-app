@@ -1,5 +1,5 @@
-import Logo from '../Logo/Logo';
-import HorizontalMenu from '../HorizontalMenu/HorizontalMenu';
+import Logo from '../../shared/Logo/Logo';
+import HorizontalMenu from '../../shared/HorizontalMenu/HorizontalMenu';
 import Button from '../../shared/Button/Button';
 import Subtitle from '../../shared/Subtitle/Subtitle';
 import MainTitle from '../../shared/MainTitle/MainTitle';
@@ -8,22 +8,21 @@ import Weather from '../Weather/Weather';
 
 import './Header.scss';
 
+export const horizontalLinks = [
+    { id: 1, name: 'Home', address: '/' },
+    { id: 2, name: 'Features', address: '/features' },
+    { id: 3, name: 'Gallery', address: '/gallery' },
+    { id: 4, name: 'Reviews', address: '/reviews' }
+];
+
 export default function Header() {
-
-    const horizontalLinks = [
-        { id: 1, name: 'Home', address: '/' },
-        { id: 2, name: 'Features', address: '/features' },
-        { id: 3, name: 'Gallery', address: '/gallery' },
-        { id: 4, name: 'Reviews', address: '/reviews' }
-    ];
-
     return (
         <header className='header'>
             <div className='header__inner'>
                 <div className='header__top'>
                     <Logo />
                     <HorizontalMenu links={horizontalLinks} />
-                    <Button title='Book now' />
+                    <Button title='Contact us' />
                 </div>
                 <Weather city='Barcelona' />
                 <Subtitle title='Serenity' />
