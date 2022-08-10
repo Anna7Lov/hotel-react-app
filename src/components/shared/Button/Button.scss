@@ -11,8 +11,8 @@
     line-height: 150%;
     color: $white-color;
     display: block;
-    cursor: pointer;
-    border: none;    
+    cursor: pointer;       
+    border: 5px solid $blue-color;
 
     &:hover {
         background: transparent;
