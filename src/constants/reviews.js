@@ -1,4 +1,4 @@
-export const SETTINGS = {
+export const SLIDER_SETTINGS = {
     dots: true,
     autoplay: true,
     infinite: true,

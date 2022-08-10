@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-import { SETTINGS } from '../../../constants/reviews';
+import { SLIDER_SETTINGS } from '../../../constants/reviews';
 
 import './Reviews.scss';
 import "slick-carousel/slick/slick.css";
@@ -17,7 +17,7 @@ export default function Reviews() {
   ];
   
   return (
-    <Slider className="reviews" {...SETTINGS}>
+    <Slider className="reviews" {...SLIDER_SETTINGS}>
       {reviews.map((review) => (
         <div key={review.id} className='reviews__content'>
           <p className='reviews__text'>{review.text}</p>

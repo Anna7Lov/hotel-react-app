@@ -1,0 +1,17 @@
+@import '../../index.scss';
+
+.rooms-page {
+
+    &__main-content {
+        @include main-align();
+    }    
+
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+
+    
+}
