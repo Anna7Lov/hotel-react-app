@@ -1,0 +1,19 @@
+@import '../../index.scss';
+
+.gallery-page {
+
+    &__main-content {
+        @include main-align();
+    }
+
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+
+    &__content {
+        margin-bottom: 50px;
+    }
+}
