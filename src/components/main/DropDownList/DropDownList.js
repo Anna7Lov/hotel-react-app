@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import axios from "axios";
+import { Services } from '../../../services/services';
 
 import './DropDownList.scss';
 
@@ -9,12 +9,11 @@ export default function DropDownList() {
 
   const handleChange = event => {       
     setSelected(event.target.value);    
-    
   };
 
   useEffect(() => {
     async function getOptions() {
-      const response = await axios.get('/api/options');
+      const response = await Services.getOptions();
       setOptions(response.data);
     }
     getOptions();

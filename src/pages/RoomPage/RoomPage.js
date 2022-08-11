@@ -42,7 +42,7 @@ export default function RoomPage() {
                     <Title title='Info' />
                     <span className='room-page__info'>Price: {room.price}€ Night</span>
                     <span className='room-page__info'>Capacity: {room.capacity} {room.capacity === 1 ? 'Person' : 'Persons'}</span>
-                    <Text text='With a privileged location in the city’s most exclusive area, Rayal Park is 5* hotel with a sophisticated interior design that breathes elegance and distinction. The use of soft tones, with some splashes of colour provided by works of art and upholsteries, natural light and fine materials such as special marble and wood, all play an important role, creating an atmosphere of timeless luxury. The project was executed in collaboration with prestigious designer Jaime Beriestain. The establishment offers large, bright rooms, the  Restaurant, the Spa, a plunge pool and the impressive Rooftop Bar, with panoramic views of the city.' />
+                    <Text text='With a privileged location in the city’s most exclusive area, Rayal Park is 5* hotel with a sophisticated interior design that breathes elegance and distinction. The use of soft tones, with some splashes of colour provided by works of art and upholsteries, natural light and fine materials such as special marble and wood, all play an important role, creating an atmosphere of timeless luxury. The project was executed in collaboration with prestigious designer Jaime Beriestain. The establishment offers large, bright rooms, the  Restaurant, the Spa, a plunge pool and the impressive Rooftop Bar, with panoramic views of the city.' />
                 </div>
             </div>
             <Footer />

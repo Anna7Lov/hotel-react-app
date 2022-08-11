@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import axios from "axios";
 import { Link } from 'react-router-dom';
+import { Services } from '../../../services/services';
 
 import './Rooms.scss';
 
@@ -9,7 +9,7 @@ export default function Rooms() {
 
     useEffect(() => {
       async function getRooms() {
-        const response = await axios.get('/api/rooms');
+        const response = await Services.getRooms();
         setRooms(response.data);
       }
       getRooms();
