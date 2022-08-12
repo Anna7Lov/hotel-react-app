@@ -9,6 +9,7 @@ import Reviews from '../../components/main/Reviews/Reviews';
 import Footer from '../../components/shared/Footer/Footer';
 import ModalWindow from '../../components/main/ModalWindow/ModalWindow';
 import Rooms from '../../components/main/Rooms/Rooms';
+import SubscriptionForm from '../../components/main/SubscriptionForm/SubscriptionForm';
 
 import './HomePage.scss';
 
@@ -36,6 +37,11 @@ export default function HomePage({options, selected, handleChange}) {
             <div className="reviews-content">
                 <Title additionalClass='reviews-content__title' title='What our clients say' />
                 <Reviews />
+            </div>
+            <div className="subscription-content">
+            <Subtitle title='STAY IN TOUCH' />
+            <Title additionalClass='subscription-content__title' title='Join our email. First to know about specials, events and more!' />
+            <SubscriptionForm />
             </div>
             <Footer />
         </div>
