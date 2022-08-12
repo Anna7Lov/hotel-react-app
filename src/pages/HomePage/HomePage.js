@@ -12,11 +12,11 @@ import Rooms from '../../components/main/Rooms/Rooms';
 
 import './HomePage.scss';
 
-export default function HomePage() {
+export default function HomePage({options, selected, handleChange}) {
     return (
         <div>
             <Header />
-            <BookingForm additionalClass='main-form'/>
+            <BookingForm additionalClass='main-form' options={options} selected={selected} handleChange={handleChange}/>
             <div className='video-content'>
                 <Video />
                 <div className='video-content__text'>

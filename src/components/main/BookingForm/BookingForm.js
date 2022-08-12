@@ -1,13 +1,14 @@
-import React, { useState } from 'react';
+
 import { useNavigate } from "react-router-dom";
 import DatePicker from 'react-datepicker';
 import Button from '../../shared/Button/Button';
 import DropDownList from '../DropDownList/DropDownList';
+import React, { useState } from 'react';
 
 import 'react-datepicker/dist/react-datepicker.css';
 import './BookingForm.scss';
 
-export default function BookingForm({ additionalClass }) {
+export default function BookingForm({ additionalClass, options, selected, handleChange }) {
     const [startDate, setStartDate] = useState(null);
     const [endDate, setEndDate] = useState(null);
     const navigate = useNavigate();
@@ -18,7 +19,7 @@ export default function BookingForm({ additionalClass }) {
     };
 
     return (
-        <form className={`booking-form ${additionalClass}`}>
+        <form className={`booking-form ${additionalClass}`} onSubmit={handleSearch}>
             <div className='booking-form__content'>
                 <label className='booking-form__label'>Check in
                     <DatePicker className='booking-form__input'
@@ -62,10 +63,8 @@ export default function BookingForm({ additionalClass }) {
                     />
                 </label>
             </div>
-            <DropDownList />
-            <div onClick={handleSearch}>
-                <Button title='Find room' />
-            </div>
+            <DropDownList options={options} selected={selected} handleChange={handleChange} />
+            <Button title='Find room' />
         </form>
     );
 }

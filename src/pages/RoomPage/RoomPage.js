@@ -33,7 +33,7 @@ export default function RoomPage() {
                     <Button title='Contact us' />
                 </div>
                 <div className='room-page__content'>
-                    <MainTitle title={room.name} />
+                    <MainTitle additionalClass='room-page__title' title={room.name} />
                     <div className='room-page__images'>
                         <img className='room-page__image' src={room.roomImage} alt={room.name} />
                         <img className='room-page__image' src={room.bathroomImage} alt={`${room.name} bathroom`} />

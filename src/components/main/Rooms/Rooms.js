@@ -25,8 +25,7 @@ export default function Rooms() {
                                 <h4 className='room__name'>{room.name}</h4>
                                 <span className='room__price'>{room.price}€ Night</span>
                             </div>
-                        </Link>
-                        
+                        </Link>                        
                     </div>
                 </div>
             ))}
