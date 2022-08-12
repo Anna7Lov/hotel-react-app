@@ -19,7 +19,7 @@ const customStyles = {
 
 Modal.setAppElement("#root");
 
-export default function ModalWindow() {
+export default function ModalWindow({options, selected, handleChange}) {
   const [modalIsOpen, setIsOpen] = useState(false);
 
   function openModal() {
@@ -39,7 +39,7 @@ export default function ModalWindow() {
         style={customStyles}
         contentLabel="Example Modal"
       >
-        <BookingForm additionalClass='modal-form' />
+        <BookingForm additionalClass='modal-form' options={options} selected={selected} handleChange={handleChange}/>
         <button className='close-button' onClick={closeModal}></button>
       </Modal>
     </div>

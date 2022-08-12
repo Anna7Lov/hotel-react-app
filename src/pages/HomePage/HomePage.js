@@ -30,7 +30,7 @@ export default function HomePage({options, selected, handleChange}) {
             <div className="rooms-content">
                 <div className='rooms-info'>
                 <Title additionalClass='rooms-info__title' title='Choose your perfect room!' />
-                <ModalWindow />
+                <ModalWindow options={options} selected={selected} handleChange={handleChange} />
                 </div>
                 <Rooms />                
             </div>
