@@ -42,8 +42,7 @@ export default function HomePage({options, selected, handleChange}) {
             <Subtitle title='STAY IN TOUCH' />
             <Title additionalClass='subscription-content__title' title='Join our email. First to know about specials, events and more!' />
             <SubscriptionForm />
-            </div>
-            <Footer />
+            </div>            
         </div>
     )
 }

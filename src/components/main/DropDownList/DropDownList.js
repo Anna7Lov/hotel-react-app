@@ -7,7 +7,7 @@ export default function DropDownList({options, selected, handleChange}) {
       <label className='drop-down-list__label'>Persons
         <select className='drop-down-list__select' required value={selected} onChange={handleChange}>        
           {options.map((item, index) => (
-            <option key={item.id} disabled={index === 0 ? true : false} value={item.value}>{item.name}</option>
+            <option key={item.id} disabled={index === 0} value={item.value}>{item.name}</option>
           ))}
         </select>
       </label>

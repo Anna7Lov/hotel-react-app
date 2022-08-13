@@ -7,6 +7,7 @@ import ReviewsPage from './pages/ReviewsPage/ReviewsPage';
 import RoomsPage from './pages/RoomsPage/RoomsPage';
 import RoomPage from './pages/RoomPage/RoomPage';
 import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
+import Footer from './components/shared/Footer/Footer';
 import { Services } from '../src/services/services';
 import {
   FEATURES,
@@ -17,8 +18,8 @@ import {
 
 function App() {
   const [selected, setSelected] = useState('');
-  const [options, setOptions] = useState([]);   
-  
+  const [options, setOptions] = useState([]);
+
   useEffect(() => {
     async function getOptions() {
       const response = await Services.getOptions();
@@ -27,20 +28,23 @@ function App() {
     getOptions();
   }, []);
 
-  const handleChange = event => {       
-    setSelected(event.target.value);    
+  const handleChange = event => {
+    setSelected(event.target.value);
   };
 
-  return (   
+  return (
+    <div>
       <Routes>
-        <Route path='/' element={<HomePage options={options} selected={selected} handleChange={handleChange}  />} />
+        <Route path='/' element={<HomePage options={options} selected={selected} handleChange={handleChange} />} />
         <Route path={`${FEATURES}`} element={<FeaturesPage />} />
         <Route path={`${GALLERY}`} element={<GalleryPage />} />
         <Route path={`${REVIEWS}`} element={<ReviewsPage />} />
         <Route path={`${ROOMS}`} element={<RoomsPage selected={selected} />} />
-        <Route path={`${ROOMS}/:id`} element={<RoomPage />} />        
-        <Route path='*' element={<NotFoundPage />} />          
-      </Routes>    
+        <Route path={`${ROOMS}/:id`} element={<RoomPage />} />
+        <Route path='*' element={<NotFoundPage />} />
+      </Routes>
+      <Footer />
+    </div>
   );
 }
 
