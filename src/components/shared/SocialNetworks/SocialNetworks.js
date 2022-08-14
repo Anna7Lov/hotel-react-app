@@ -1,3 +1,5 @@
+import React from "react";
+
 import './SocialNetworks.scss';
 
 export default function SocialNetworks({ networks }) {

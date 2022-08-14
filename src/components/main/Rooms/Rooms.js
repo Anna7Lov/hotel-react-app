@@ -16,7 +16,7 @@ export default function Rooms() {
     }, []);
 
     return (
-        <div className='rooms'>
+        <div className='rooms' data-testid="list">
             {rooms.map((room) => (
                 <div key={room.id} className={`room ${room.additionalClass}`}>
                     <div className='room__content'>

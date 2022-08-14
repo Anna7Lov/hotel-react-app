@@ -1,3 +1,5 @@
+import React from "react";
+
 import './MainTitle.scss';
 
 export default function MainTitle({ additionalClass, title, word }) {

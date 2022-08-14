@@ -1,3 +1,4 @@
+import React from "react";
 import Header from '../../components/main/Header/Header';
 import BookingForm from '../../components/main/BookingForm/BookingForm';
 import Video from '../../components/main/Video/Video';
@@ -6,7 +7,6 @@ import Title from '../../components/shared/Title/Title';
 import Button from '../..//components/shared/Button/Button';
 import AdvantagesContent from '../../components/main/AdvantagesContent/AdvantagesContent';
 import Reviews from '../../components/main/Reviews/Reviews';
-import Footer from '../../components/shared/Footer/Footer';
 import ModalWindow from '../../components/main/ModalWindow/ModalWindow';
 import Rooms from '../../components/main/Rooms/Rooms';
 import SubscriptionForm from '../../components/main/SubscriptionForm/SubscriptionForm';

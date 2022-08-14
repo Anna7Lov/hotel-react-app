@@ -1,3 +1,5 @@
+import React from "react";
+
 import './Subtitle.scss';
 
 export default function Subtitle({ title }) {

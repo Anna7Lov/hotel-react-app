@@ -1,3 +1,4 @@
+import React from "react";
 import Logo from '../../shared/Logo/Logo';
 import HorizontalMenu from '../../shared/HorizontalMenu/HorizontalMenu';
 import Button from '../../shared/Button/Button';

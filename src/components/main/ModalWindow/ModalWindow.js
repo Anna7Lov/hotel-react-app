@@ -17,7 +17,7 @@ const customStyles = {
   },
 };
 
-Modal.setAppElement("#root");
+if (process.env.NODE_ENV !== 'test') Modal.setAppElement('#root');
 
 export default function ModalWindow({options, selected, handleChange}) {
   const [modalIsOpen, setIsOpen] = useState(false);

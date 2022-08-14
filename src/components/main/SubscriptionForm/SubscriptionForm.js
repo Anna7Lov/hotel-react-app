@@ -1,3 +1,4 @@
+import React from "react";
 import Button from '../../shared/Button/Button';
 
 import './SubscriptionForm.scss';

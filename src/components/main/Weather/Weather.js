@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
 import ReactAnimatedWeather from 'react-animated-weather';
-import { API_URL } from '../../../constants/weather';
 import { ThreeDots } from 'react-loader-spinner';
+import { Services } from "../../../services/services";
 
 import './Weather.scss';
 
@@ -16,7 +15,7 @@ export default function Weather({ city }) {
   }
 
   useEffect(() => {
-    axios.get(API_URL).then(showTemperature);
+    Services.getTemperature().then(showTemperature);
   }, [])
 
   return (

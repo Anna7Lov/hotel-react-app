@@ -1,3 +1,4 @@
+import React from "react";
 import Logo from '../Logo/Logo';
 import Text from '../../shared/Text/Text';
 import SocialNetworks from '../SocialNetworks/SocialNetworks';
@@ -11,21 +12,21 @@ export default function Footer() {
 
         {
             id: 27, title: 'Home', list: [{ id: 30, name: 'Accessibility', address: '/' },
-            { id: 31, name: 'Lertifiotion', address: 'https://eva.ua/' },
-            { id: 32, name: 'Knowledge', address: 'https://evasss.ua/' }
+            { id: 31, name: 'Lertifiotion', address: '/' },
+            { id: 32, name: 'Knowledge', address: '/' }
             ]
         },
 
         {
             id: 28, title: 'Pages', list: [{ id: 40, name: 'Blogs', address: '/' },
-            { id: 41, name: 'Careers', address: 'https://eva.ua/' },
-            { id: 42, name: 'Communing', address: 'https://eva88.ua/' }
+            { id: 41, name: 'Careers', address: '/' },
+            { id: 42, name: 'Communing', address: '/' }
             ]
         },
 
         {
             id: 29, title: 'Business', list: [{ id: 50, name: 'Collaboration', address: '/' },
-            { id: 51, name: 'Investment', address: 'https://eva.ua/' },
+            { id: 51, name: 'Investment', address: '/' },
             { id: 52, name: 'People', address: '/' }
             ]
         }

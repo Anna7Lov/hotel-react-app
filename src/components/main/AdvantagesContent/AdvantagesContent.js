@@ -1,3 +1,4 @@
+import React from "react";
 import Title from '../../shared/Title/Title';
 import Text from '../../shared/Text/Text';
 import Advantages from '../Advantages/Advantages';

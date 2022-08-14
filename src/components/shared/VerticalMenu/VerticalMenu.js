@@ -1,3 +1,5 @@
+import React from "react";
+
 import './VerticalMenu.scss';
 
 export default function VerticalMenu({ links }) {

@@ -1,3 +1,5 @@
+import React from "react";
+
 import './DropDownList.scss';
 
 export default function DropDownList({options, selected, handleChange}) {  

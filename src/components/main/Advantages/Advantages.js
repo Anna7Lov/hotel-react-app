@@ -1,3 +1,5 @@
+import React from "react";
+
 import './Advantages.scss';
 
 export default function Advantages({ advantages }) {
