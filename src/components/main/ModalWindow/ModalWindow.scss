@@ -1,0 +1,42 @@
+@import '../../../index.scss';
+
+.modal-form {
+    margin: 0;
+    background: white;
+    align-items: flex-start;
+    height: 350px;
+}
+
+.close-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+
+    width: 30px;
+    height: 30px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 2px;
+        height: 18px;
+        background: $blue-color;        
+        transform: rotate(45deg);
+        left: 15px;
+        bottom: 7px
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 2px;
+        height: 18px;
+        background: $blue-color;        
+        transform: rotate(-45deg);
+        left: 15px;
+        bottom: 7px;
+    }
+}

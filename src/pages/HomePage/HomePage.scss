@@ -1,0 +1,45 @@
+@import '../../index.scss';
+
+.video-content {
+    @include main-align();
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 140px;
+}
+
+.rooms-content {
+    @include main-align();
+    margin-bottom: 140px;    
+}
+
+.rooms-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    &__title {
+        margin-bottom: 0;
+    }
+}
+
+.reviews-content {
+    @include main-align();
+
+    &__title {
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+    }   
+}
+
+.subscription-content {
+    @include main-align();
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+
+    &__title {
+        max-width: 1000px;
+    }   
+}

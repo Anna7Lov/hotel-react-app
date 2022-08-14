@@ -1,0 +1,22 @@
+@import '../../../index.scss';
+
+.button {
+    width: 134px;
+    height: 54px;
+    background: $blue-color;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: $white-color;
+    display: block;
+    cursor: pointer;       
+    border: 5px solid $blue-color;
+
+    &:hover {
+        background: transparent;
+        border: 5px solid $blue-color;
+        color: $dark-color;
+    }
+}

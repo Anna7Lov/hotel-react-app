@@ -1,0 +1,35 @@
+@import '../../index.scss';
+
+.room-page {    
+        @include main-align();  
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 100px;        
+    }
+
+    &__images {
+        padding: 20px 0;
+        margin-bottom: 10px;        
+    }
+
+    &__image {        
+        width: 610px;
+        height: 440px;
+        border-radius: 5px;
+
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+
+    &__info {
+        display: block;
+        margin-bottom: 20px;
+        font-weight: 400;
+        font-size: 18px;
+        color: $dark-color;
+    }
+}

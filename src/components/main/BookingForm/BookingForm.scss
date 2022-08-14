@@ -1,0 +1,92 @@
+@import '../../../index.scss';
+
+.booking-form {
+    display: flex;
+    border-radius: 5px;
+    max-width: 646px;
+    padding: 18px 50px 18px 18px;
+
+    &__content {
+        border-right: 1px solid #9DACB8;
+        padding: 0 30px;
+    }
+
+    &__label {
+        display: block;
+        font-weight: 600;
+        font-size: 18px;
+        color: $dark-color;
+        line-height: 160%;
+    }
+
+    &__input {
+        display: block;
+        width: 90px;
+        height: 30px;
+        border: none;
+        outline: none;
+        background: transparent;
+        cursor: pointer;
+        color: $dark-color;
+
+        &::placeholder {
+            color: $dark-color;
+        }
+    }
+}
+
+.main-form {
+    align-items: center;
+    background: #fbfaf9;
+    margin-left: 100px;
+    margin-top: -48px;
+    margin-bottom: 140px;
+}
+
+.react-datepicker-popper[data-placement^=bottom] .react-datepicker__triangle::after {
+    border-bottom-color: $blue-color;
+}
+
+.react-datepicker-popper[data-placement^=top] .react-datepicker__triangle::before,
+.react-datepicker-popper[data-placement^=bottom] .react-datepicker__triangle::before,
+.react-datepicker-popper[data-placement^=top] .react-datepicker__triangle::after,
+.react-datepicker-popper[data-placement^=bottom] .react-datepicker__triangle::after {
+    height: 1px;
+}
+
+.react-datepicker-wrapper {
+    display: block;
+}
+
+.react-datepicker {
+    border: none;
+    box-shadow: 5px 12px 30px rgba(199, 199, 199, 0.5);
+}
+
+.react-datepicker__header {
+    background: $blue-color;
+    border-bottom: none;
+}
+
+.react-datepicker__current-month,
+.react-datepicker__day-name {
+    color: $white-color;
+    font-weight: 500;
+}
+
+.react-datepicker__day {
+    font-weight: 500;
+}
+
+.react-datepicker__day--selected {
+    background: $blue-color;
+}
+
+.react-datepicker__navigation-icon::before {
+    border-color: $white-color;
+    border-width: 2px 2px 0 0;
+}
+
+.react-datepicker__navigation--next:hover {
+    border-color: $dark-color;
+}

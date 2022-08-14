@@ -1,0 +1,10 @@
+@import '../../../index.scss';
+
+.title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 140%;
+    color: $dark-color;
+    max-width: 400px;
+    margin-bottom: 25px;    
+}

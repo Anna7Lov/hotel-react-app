@@ -1,0 +1,36 @@
+@import '../../../index.scss';
+
+.vertical-menu {
+    display: flex;
+    padding-top: 35px;
+
+    &__content:not(:last-child) {
+        margin-right: 200px;
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 150%;
+        color: $dark-color;
+        margin-bottom: 30px;
+    }
+
+    &__item {
+        margin-bottom: 20px;        
+    }
+
+    &__link {
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        color: $dark-color;
+        opacity: 0.7;
+        
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

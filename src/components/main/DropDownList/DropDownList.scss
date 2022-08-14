@@ -1,0 +1,26 @@
+@import '../../../index.scss';
+
+.drop-down-list {   
+        border-right: 1px solid #9DACB8;
+        padding: 0 30px;   
+        border-right: none;
+
+    &__label {
+        display: block;
+        font-weight: 600;
+        font-size: 18px;
+        color: $dark-color;
+        line-height: 160%;
+    }    
+
+    &__select {
+        display: block;
+        width: 82px;
+        height: 30px;
+        border: none;
+        outline: none;
+        background: transparent;
+        cursor: pointer;
+        color: $dark-color;
+    }
+}

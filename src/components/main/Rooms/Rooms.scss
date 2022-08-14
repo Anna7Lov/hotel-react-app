@@ -1,0 +1,61 @@
+@import '../../../index.scss';
+
+.rooms {
+    display: flex;
+    flex-wrap: wrap;    
+}
+
+.room {
+    width: calc(50% - 15px);    
+    height: 250px;
+    border-radius: 5px;
+    display: flex;
+    align-items: flex-end;
+
+    &__link {
+        text-decoration: none;
+    }
+
+    &__content {
+        width: 215px;
+        background: rgba(226, 226, 226, 0.4);
+        backdrop-filter: blur(10px);
+        border-radius: 5px;
+        padding: 15px 15px 15px 25px;        
+    }
+
+    &__name {
+        margin-bottom: 10px;
+        font-weight: 500;
+        font-size: 22px;
+        color: $dark-color;
+    }
+
+    &__price {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: 500;
+        font-size: 18px;
+        color: $dark-color;
+    }
+}
+
+.single {
+    background: url(../../../../public/images/room_single_deluxe.jpg) no-repeat;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.double {
+    background: url(../../../../public/images/room_double_deluxe.jpg) no-repeat;
+    margin-bottom: 30px;
+}
+
+.family {
+    background: url(../../../../public/images/room_family_suit.jpg) no-repeat;    
+    margin-right: 30px;    
+}
+
+.family-deluxe {
+    background: url(../../../../public/images/room_family_suit_deluxe.jpg) no-repeat;    
+}

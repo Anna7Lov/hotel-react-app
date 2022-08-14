@@ -1,0 +1,9 @@
+@import '../../index.scss';
+
+.gallery-page {    
+        @include main-align();   
+
+    &__content {
+        margin-bottom: 100px;
+    }
+}

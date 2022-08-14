@@ -1,0 +1,11 @@
+@import '../../../index.scss';
+
+.subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;    
+    letter-spacing: 0.1em;
+    text-transform: uppercase;    
+    color: $blue-color;
+    margin-bottom: 10px;    
+}

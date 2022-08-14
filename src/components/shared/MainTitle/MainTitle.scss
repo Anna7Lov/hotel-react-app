@@ -1,0 +1,14 @@
+@import '../../../index.scss';
+
+.main-title{
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 120%;
+    color: $dark-color;
+    max-width: 420px;
+    margin-bottom: 10px;
+
+    &__word {
+        color: $blue-color;
+    }
+}
